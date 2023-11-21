@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #info-container {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<img id="my-image" src="Abhay_Image1.jpg" alt="Your Image" onclick="showInfo()">
+
+<div id="info-container">
+    <h2>About Me</h2>
+    <p>Insert more specific information about yourself or your interests here.</p>
+</div>
+
+<script>
+    function showInfo() {
+        var infoContainer = document.getElementById("info-container");
+
+        if (infoContainer.style.display === "none") {
+            infoContainer.style.display = "block";
+        } else {
+            infoContainer.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
